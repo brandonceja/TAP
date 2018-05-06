@@ -19,6 +19,9 @@
 	</script>
 </head>
 <body>
+<<<<<<< HEAD
+	<?php include("header.php"); ?>
+=======
 	<header id="header">
 		<nav class="menu">
 			<div class="logo">
@@ -34,6 +37,7 @@
 			</div>
 		</nav>
 	</header>
+>>>>>>> 9f864c0f5335f3fb98e6215452500815823c9685
 	<div class="wrap">
   		<div id="arrow-left" class="arrow"></div>
  			<div id="slider">
