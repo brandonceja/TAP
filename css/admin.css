@@ -1,0 +1,32 @@
+*{
+	background-color: #eaebed;
+	margin: 0;
+}
+
+header, nav, nav div, nav ul, nav a, nav img{
+	background-color: #fff;
+}
+
+nav div{
+	padding-top: 0.7em;
+	border-bottom: solid 1px #fefefe;
+}
+
+h2{
+	margin-top: 3em;
+	margin-bottom: 1em;
+	font-size: 3em;
+}
+
+input{
+	width: 300px;
+	height: 40px;
+	margin-bottom: 1em;
+	font-size: 1.2em;
+	background-color: #fefefe;
+}
+
+button{
+	width: 10%;
+	font-size: 1.2em;
+}

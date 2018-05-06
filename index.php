@@ -19,25 +19,7 @@
 	</script>
 </head>
 <body>
-<<<<<<< HEAD
 	<?php include("header.php"); ?>
-=======
-	<header id="header">
-		<nav class="menu">
-			<div class="logo">
-				<img src="img/adidas-logo.jpg">
-			</div>
-			<ul>
-				<li class="element"><a href="">home</a></li>
-				<li class="element"><a href="">shop</a></li>
-				<li class="element"><a href="">buy now</a></li>
-			</ul>
-			<div class="car">
-				<img src="img/shopping-cart.png">
-			</div>
-		</nav>
-	</header>
->>>>>>> 9f864c0f5335f3fb98e6215452500815823c9685
 	<div class="wrap">
   		<div id="arrow-left" class="arrow"></div>
  			<div id="slider">

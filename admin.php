@@ -13,9 +13,9 @@
   <h2>Inicia Sesión</h2>
   <div class="modal-body">
     <form id="login" action="./include/login.inc.php" method="POST">
-      <input type="text" name="username" placeholder="usuario/e-mail">
+      <input type="text" name="username" placeholder="Usuario">
       <br>
-      <input type="password" name="pwd" placeholder="contraseña">
+      <input type="password" name="pwd" placeholder="Contraseña">
       <br>
       <button type="submit" name="submit" class="lgn">Login</button>
     </form>
