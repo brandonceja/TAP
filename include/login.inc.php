@@ -28,6 +28,8 @@
 						$_SESSION['u_name'] = $row['username'];
 						header("Location: ../panel.php?login=success");
 						exit();
+					}else{
+						header("Location: ../admin.php?login=error");
 					}
 				}
 			}
