@@ -1,0 +1,100 @@
+{
+	"shirts": [
+		{
+			"image" : "img/shirt-1.png",
+			"title" : "Adidas Originals",
+			"description" : "Men's running shirt",
+			"price" : "£45.00"
+		},
+		{
+			"image" : "img/shirt-2.png",
+			"title" : "Adidas Originals",
+			"description" : "Men's running shirt",
+			"price" : "£16.00"
+		},
+		{
+			"image" : "img/shirt-3.png",
+			"title" : "Adidas Originals",
+			"description" : "Men's running shirt",
+			"price" : "£54.00"
+		},
+		{
+			"image" : "img/shirt-4.png",
+			"title" : "Adidas Originals",
+			"description" : "Men's running shirt",
+			"price" : "£20.00"
+		},
+		{
+			"image" : "img/shirt-5.png",
+			"title" : "EQT Jacket",
+			"description" : "Women's originals",
+			"price" : "£151.00"
+		},
+		{
+			"image" : "img/shirt-6.png",
+			"title" : "Adidas Swearshirt",
+			"description" : "Men's Originals",
+			"price" : "£70.00"
+		},
+		{
+			"image" : "img/shirt-7.png",
+			"title" : "Adidas Casual",
+			"description" : "Men's Originals",
+			"price" : "£25.00"
+		},
+		{
+			"image" : "img/shirt-8.png",
+			"title" : "Adidas Sweatshirt",
+			"description" : "Men's Originals",
+			"price" : "£70.00"
+		},
+		{
+			"image" : "img/shirt-9.png",
+			"title" : "Adidas Originals",
+			"description" : "Men's running shirt",
+			"price" : "£47.00"
+		},
+		{
+			"image" : "img/shirt-10.png",
+			"title" : "Adidas Casual",
+			"description" : "Men's Originals",
+			"price" : "£25.00"
+		},
+		{
+			"image" : "img/shirt-11.png",
+			"title" : "Adidas Originals",
+			"description" : "Men's running shirt",
+			"price" : "£65.00"
+		},
+		{
+			"image" : "img/shirt-12.png",
+			"title" : "Adidas Troll",
+			"description" : "Scientific's running shirt",
+			"price" : "£200.00"
+		},
+		{
+			"image" : "img/shirt-4.png",
+			"title" : "Adidas Originals",
+			"description" : "Men's running shirt",
+			"price" : "£20.00"
+		},
+		{
+			"image" : "img/shirt-3.png",
+			"title" : "Adidas Originals",
+			"description" : "Men's running shirt",
+			"price" : "£54.00"
+		},
+		{
+			"image" : "img/shirt-1.png",
+			"title" : "Adidas Originals",
+			"description" : "Men's running shirt",
+			"price" : "£45.00"
+		},
+		{
+			"image" : "img/shirt-9.png",
+			"title" : "Adidas Originals",
+			"description" : "Men's running shirt",
+			"price" : "£47.00"
+		}
+	]
+}
