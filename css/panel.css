@@ -1,0 +1,50 @@
+*{
+	background-color: #eaebed;
+}
+
+header, nav, nav div, nav ul, nav a, nav img{
+	background-color: #fff;
+}
+
+.title, .shirts, .stats, .shoes, .accessories{
+	margin-top: 2em;
+	margin-bottom: 2em;
+	width: 80%;
+	margin-left: 10%;
+	padding: 1em;
+	-webkit-box-shadow: 17px 10px 29px -6px rgba(0,0,0,0.44);
+	-moz-box-shadow: 17px 10px 29px -6px rgba(0,0,0,0.44);
+	box-shadow: 17px 10px 29px -6px rgba(0,0,0,0.44);
+	background-color: #fefefe;
+}
+
+.p1{
+	margin-left: 2.3%;
+}
+
+.shirts, .stats{
+	width: 38%;
+	margin: 0;
+	display: inline-block;
+}
+
+.stats{
+	margin-left: 3.9em;
+}
+
+h2, h3, table, th, td{
+	background-color: #fefefe;
+}
+
+tr th{
+	text-align: left;
+}
+
+thead tr th{
+	text-align: center;
+}
+
+p{
+	align-self: left;
+	text-align: left;
+}
