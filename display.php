@@ -1,32 +1,36 @@
 <?php
-	$jsondata = file_get_contents("shirts.json");
-	$json = json_decode($jsondata, true);
-	$shirts = $json["shirts"];
+    $conexion = mysqli_connect('localhost', 'root', '', 'adidas');
 	$cont = 0;
 
-	foreach ($shirts as $shirt) {
-		if(file_exists($shirt["image"]) && !empty($shirt["image"])){
-			$image = $shirt["image"];
+				$sql="SELECT * from product";
+				$result= mysqli_query($conexion, $sql);
+
+
+		while ($mostrar=mysqli_fetch_array($result)){
+			if(file_exists($mostrar["image"]) && !empty($mostrar["image"])){
+			$image = $mostrar["image"];
 		}else{
 			$image = "img/error.png";
 		}
-
-		if(empty($shirt["title"]) || strlen($shirt["title"])>27){
+		if(empty($mostrar["title"]) || strlen($mostrar["title"])>27){
 			$title = "NO TITLE";
 		}else{
-			$title = $shirt["title"];	
+			$title = $mostrar["title"];	
 		}
 
-		if(empty($shirt["description"]) || strlen($shirt["description"])>30){
+		if(empty($mostrar["description"]) || strlen($mostrar["description"])>30){
 			$des = "NO DESCRIPTION";
 		}else{
-			$des = $shirt["description"];
+			$des = $mostrar["description"];
 		}
 
-		if(empty($shirt["price"]) || strlen($shirt["price"])>10){
+		if(empty($mostrar["price"]) || strlen($mostrar["price"])>10){
 			$price = "UNDEFINED";
 		}else{
-			$price = $shirt["price"];
+			$price = $mostrar["price"];
+		}
+		if ($cont == 0) {
+		echo "<h4 border = '1'>SHIRTS</h4>";	
 		}
 
 		$cont++;
@@ -40,14 +44,26 @@
 							<h4>
 								'.$des.'
 							</h4>
-							<h2>'.$price.'</h2>
+							<h2>£'.$price.'.00</h2>
 			  		    </div>
 				    </div>
 			    </div>';
 		if($cont % 4 == 0){
 			echo "<br>";
 		}
-		if($cont > 11){
+		
+		if ($cont == 4) {
+		echo "<h4>SHOES</h4>";	
+		}
+
+		if ($cont == 8) {
+		echo "<h4> PANTS </h4>";	
+		}
+		if ($cont == 12) {
+		echo "<h4>ACCESORIES</h4>";	
+		}
+
+		if($cont > 15){
 			break;
 		}
 	}
