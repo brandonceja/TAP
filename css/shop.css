@@ -136,6 +136,7 @@ body{
 	margin: 4em 0em 0em -7.5em;
 }
 
+
 .products{
 	margin: 5em 0em 3em -3.5em;
 }
@@ -180,6 +181,11 @@ body{
 	margin-top: 12px;
 	margin-bottom: 10px;
 	font-size: 12px;
+}
+
+.CHINGADAMADRE{
+	transform: translate(-20%, 0%);
+	font-size: 1em;
 }
 
 button {

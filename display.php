@@ -12,11 +12,13 @@
 		}else{
 			$image = "img/error.png";
 		}
+		
 		if(empty($mostrar["title"]) || strlen($mostrar["title"])>27){
 			$title = "NO TITLE";
 		}else{
 			$title = $mostrar["title"];	
 		}
+		
 
 		if(empty($mostrar["description"]) || strlen($mostrar["description"])>30){
 			$des = "NO DESCRIPTION";
@@ -30,7 +32,9 @@
 			$price = $mostrar["price"];
 		}
 		if ($cont == 0) {
-		echo "<h4 border = '1'>SHIRTS</h4>";	
+		echo '<div class="CHINGADAMADRE"> <h4 border="1">SHIRTS</h4> </div>';
+		
+	
 		}
 
 		$cont++;
@@ -53,14 +57,14 @@
 		}
 		
 		if ($cont == 4) {
-		echo "<h4>SHOES</h4>";	
+		echo '<div class="CHINGADAMADRE"> <h4 border="1">SHOES</h4> </div>';	
 		}
 
 		if ($cont == 8) {
-		echo "<h4> PANTS </h4>";	
+		echo '<div class="CHINGADAMADRE"> <h4 border="1">PANTS</h4> </div>';	
 		}
 		if ($cont == 12) {
-		echo "<h4>ACCESORIES</h4>";	
+		echo '<div class="CHINGADAMADRE"> <h4 border="1">ACCESORIES</h4> </div>';	
 		}
 
 		if($cont > 15){

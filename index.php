@@ -20,6 +20,7 @@
 </head>
 <body>
 	<?php include("header.php"); ?>
+	
 	<div class="wrap">
   		<div id="arrow-left" class="arrow"></div>
  			<div id="slider">
@@ -48,7 +49,13 @@
 			 ?>
 		</div>
 	</div>
-	<button>Show more shirts</button>
+
+	
+
+
+
+
+	<!-- <button>Show more shirts</button> -->
 	<br><br><br><br>	
 	<script src="js/slider.js"></script>
 </body>
