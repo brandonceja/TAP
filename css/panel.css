@@ -6,12 +6,12 @@ header, nav, nav div, nav ul, nav a, nav img{
 	background-color: #fff;
 }
 
-.title, .shirts, .stats, .shoes, .accessories{
+.title, .shirts, .stats, .shoes, .accessories, .pants, .wrapper{
 	margin-top: 2em;
 	margin-bottom: 2em;
 	width: 80%;
 	margin-left: 10%;
-	padding: 1em;
+	padding: 0;
 	-webkit-box-shadow: 17px 10px 29px -6px rgba(0,0,0,0.44);
 	-moz-box-shadow: 17px 10px 29px -6px rgba(0,0,0,0.44);
 	box-shadow: 17px 10px 29px -6px rgba(0,0,0,0.44);
@@ -20,6 +20,10 @@ header, nav, nav div, nav ul, nav a, nav img{
 
 .p1{
 	margin-left: 2.3%;
+}
+
+.title{
+	background-color: grey;
 }
 
 .shirts, .stats{
@@ -32,12 +36,21 @@ header, nav, nav div, nav ul, nav a, nav img{
 	margin-left: 3.9em;
 }
 
-h2, h3, table, th, td{
+h2, table, th, td, img, a{
 	background-color: #fefefe;
+}
+
+h3{
+	font-size: 4em;
+	color: #7c7c7c;
+	background-color: transparent;
+	margin-top: 0.2em;
 }
 
 tr th{
 	text-align: left;
+	padding-right: 2.7em;
+	padding-top: 0.2em;
 }
 
 thead tr th{
@@ -47,4 +60,153 @@ thead tr th{
 p{
 	align-self: left;
 	text-align: left;
+}
+
+.delete, .delete:hover {
+	background-color: #fefefe;
+	margin: 0;
+	padding: 0;
+}
+
+.t-shirts{
+	margin: 0;
+	padding-top: 3em;
+	background-image: url(../img/banner-s.jpg);
+	background-position: center;
+	background-size: 41em;
+	height: 10em;
+}
+
+.t-shirts h3{
+	color: #606060;
+}
+
+.pants h3, .access h3{
+	color: #fefefe;
+}
+
+.pants h3{
+	margin-right: 15em;
+}
+
+.shoes h3{
+	margin-left: 15em;
+}
+
+.access{
+	margin: 0;
+	padding-top: 3em;
+	background-image: url(../img/banner-a.jpg);
+	background-position: center;
+	background-size: 60em;
+	height: 10em;
+}
+
+.pt{
+	margin: 0;
+	padding-top: 3em;
+	background-image: url(../img/banner-p.jpg);
+	background-position: center;
+	background-size: 75em;
+	height: 10em;
+}
+
+.ten{
+	margin: 0;
+	padding-top: 3em;
+	background-image: url(../img/banner-t.jpg);
+	background-position: center;
+	background-size: 76em;
+	height: 10em;
+}
+
+.shirts{
+	padding: 0;
+}
+
+table{
+	padding: 1em;
+}
+
+.shoes table, .accessories table, .pants table{
+	margin-left: 22em;
+}
+
+.wrapper{
+	width: 50%;
+	margin-top: 5em;
+	margin-left: 27em;
+	background-color: #fefefe;
+	display: flex;
+	padding: 0;
+}
+
+.image-product{
+	padding: 0;
+	margin: 0;
+	margin-left: 3em;
+	height: 15em;
+	width: 15em;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	padding-bottom: 1em;
+	background-color: #fefefe;
+}
+
+.wrapper p, .wrapper .content{
+	background-color: #fefefe;
+}
+
+.content{
+	padding-top: 2em;
+	padding-left: 20em;
+	text-align-last: right;
+}
+
+.change{
+	margin-top: 8em;
+	opacity: 0.2;
+	background-color: #333333;
+}
+
+.change:hover{
+	opacity: 0.9;
+	background-color: #333333;
+}
+
+.edit{
+	display: none;
+	margin-left: 3em;
+}
+
+#price-i{
+	margin-bottom: 2em;
+}
+
+#f{
+	display: none;
+}
+
+.add{
+	margin-bottom: 1em;
+}
+
+.add-f{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 7em;
+	text-align: left;
+	background-color: #fefefe;
+	font-size: 1.1em;
+	display: none;
+}
+
+.add-g{
+	text-align: center;
+}
+
+
+#t-content, #p-content, #a-content{
+	background-color: #fefefe;
 }

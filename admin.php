@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
   <link rel="stylesheet" href="css/shop.css">
   <link rel="stylesheet" href="css/admin.css">
   <title>Adidas Shop</title>
