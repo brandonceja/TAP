@@ -76,17 +76,6 @@
 				id: 3
 			});
 			});
-
-
-			//Delete functions
-			$(".delete").on("click", function(){
-				console.log("clicked");
-				var id = $(".delete");
-				console.log(id);
-				$("s-content").load("delete-element.php", {
-					id: id
-				});
-			});
 		});
 	</script>
  </head>
@@ -110,7 +99,14 @@
 
 					while($row = mysqli_fetch_array($query1)){
 							echo "<tr><th>".$row[0]."</th><th>".$row[2]."</th><th>".$row[3]."</th><th>£".$row[5].".00</th>
-							<th><a href=\"http://localhost:81/TAP/edit.php?product=".$row[0]."\"><img src=\"img/edit.png\" height=20 /></a></th><th><button class=\"delete\"><img src=\"img/delete.png\" height=20/></buton></th></tr>";
+							<th><a href=\"http://localhost:81/TAP/edit.php?product=".$row[0]."\"><img src=\"img/edit.png\" height=20 /></a></th><th><button class=\"delete\"id=\"delete".$row[0]."\"><img src=\"img/delete.png\" height=20/></buton></th></tr>";
+							echo "<script>
+								$(\"#delete".$row[0]."\").on(\"click\", function(){
+									$(\"#s-content\").load(\"delete-element.php\", {
+										id: ".$row[0]."
+									});
+								});
+							</script>";
 					}
 					 echo "</table>";
 					 ?>
@@ -141,10 +137,17 @@
 		 			echo "<table><thead><tr><th>ID</th><th>Name</th><th>Description</th><th>Price</th></tr></thead>";
 
 		 			while($row = mysqli_fetch_array($query1)){
-		 					echo "<tr><th>".$row[0]."</th><th>".$row[2]."</th><th>".$row[3]."</th><th>£".$row[5].".00</th><th><a href=\"http://localhost:81/TAP/edit.php?product=".$row[0]."\"><img src=\"img/edit.png\" height=20 /></a></th><th><button class=\"delete\"><img src=\"img/delete.png\" height=20/></buton></th></tr>";
-		 			}
-		 			 echo "</table>";
-		 	?>
+		 					echo "<tr><th>".$row[0]."</th><th>".$row[2]."</th><th>".$row[3]."</th><th>£".$row[5].".00</th><th><a href=\"http://localhost:81/TAP/edit.php?product=".$row[0]."\"><img src=\"img/edit.png\" height=20 /></a></th><th><button class=\"delete\" id=\"delete".$row[0]."\"><img src=\"img/delete.png\" height=20/></buton></th></tr>";
+							echo "<script>
+								$(\"#delete".$row[0]."\").on(\"click\", function(){
+									$(\"#t-content\").load(\"delete-element.php\", {
+										id: ".$row[0]."
+									});
+								});
+							</script>";
+					}
+					 echo "</table>";
+					 ?>
 	 	</div>
 	 	<button class="add" id="t-btn">Add Product</button>
 	 	<form action="" class="add-f add-g" id="t-frm" onsubmit="return(false)">
@@ -168,10 +171,17 @@
 		 			echo "<table><thead><tr><th>ID</th><th>Name</th><th>Description</th><th>Price</th></tr></thead>";
 
 		 			while($row = mysqli_fetch_array($query1)){
-		 					echo "<tr><th>".$row[0]."</th><th>".$row[2]."</th><th>".$row[3]."</th><th>£".$row[5].".00</th><th><a href=\"http://localhost:81/TAP/edit.php?product=".$row[0]."\"><img src=\"img/edit.png\" height=20 /></a></th><th><button class=\"delete\"><img src=\"img/delete.png\" height=20/></buton></th></tr>";
-		 			}
-		 			 echo "</table>";
-		 	?>
+		 					echo "<tr><th>".$row[0]."</th><th>".$row[2]."</th><th>".$row[3]."</th><th>£".$row[5].".00</th><th><a href=\"http://localhost:81/TAP/edit.php?product=".$row[0]."\"><img src=\"img/edit.png\" height=20 /></a></th><th><button class=\"delete\" id=\"delete".$row[0]."\"><img src=\"img/delete.png\" height=20/></buton></th></tr>";
+							echo "<script>
+								$(\"#delete".$row[0]."\").on(\"click\", function(){
+									$(\"#a-content\").load(\"delete-element.php\", {
+										id: ".$row[0]."
+									});
+								});
+							</script>";
+					}
+					 echo "</table>";
+					 ?>
 	 	</div>
 		<button class="add" id="a-btn">Add Product</button>
 		<form action="" class="add-f add-g" id="a-frm" onsubmit="return(false)">
@@ -195,10 +205,17 @@
 		 			echo "<table><thead><tr><th>ID</th><th>Name</th><th>Description</th><th>Price</th></tr></thead>";
 
 		 			while($row = mysqli_fetch_array($query1)){
-		 					echo "<tr><th>".$row[0]."</th><th>".$row[2]."</th><th>".$row[3]."</th><th>£".$row[5].".00</th><th><a href=\"http://localhost:81/TAP/edit.php?product=".$row[0]."\"><img src=\"img/edit.png\" height=20 /></a></th><th><button class=\"delete\"><img src=\"img/delete.png\" height=20/></buton></th></tr>";
-		 			}
-		 			 echo "</table>";
-		 		 ?>
+		 					echo "<tr><th>".$row[0]."</th><th>".$row[2]."</th><th>".$row[3]."</th><th>£".$row[5].".00</th><th><a href=\"http://localhost:81/TAP/edit.php?product=".$row[0]."\"><img src=\"img/edit.png\" height=20 /></a></th><th><button class=\"delete\" id=\"delete".$row[0]."\"><img src=\"img/delete.png\" height=20/></buton></th></tr>";
+							echo "<script>
+								$(\"#delete".$row[0]."\").on(\"click\", function(){
+									$(\"#p-content\").load(\"delete-element.php\", {
+										id: ".$row[0]."
+									});
+								});
+							</script>";
+					}
+					 echo "</table>";
+					 ?>
 	    </div>
 	 	<button class="add" id="p-btn">Add Product</button>
 	 	 <form action="" class="add-f add-g" id="p-frm" onsubmit="return(false)">
