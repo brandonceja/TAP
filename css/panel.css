@@ -34,6 +34,7 @@ header, nav, nav div, nav ul, nav a, nav img{
 
 .stats{
 	margin-left: 3.9em;
+	margin-top: -5em;
 }
 
 h2, table, th, td, img, a{
@@ -208,5 +209,22 @@ table{
 
 
 #t-content, #p-content, #a-content{
+	background-color: #fefefe;
+}
+
+.Buscador input{
+	font-size: 1em;
+}
+
+.Buscador, #result, .Productos{
+	background-color: #fefefe;
+}
+
+#result{
+	height: 20em;
+	padding-left: 10em;
+}
+
+#result p{
 	background-color: #fefefe;
 }

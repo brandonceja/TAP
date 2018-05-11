@@ -21,3 +21,5 @@
 			echo "tipo no permitido";
 		}
 	}
+	header("Location: http://localhost:81/TAP/edit.php?product=".$_POST["h"]);
+	exit();

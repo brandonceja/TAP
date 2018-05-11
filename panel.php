@@ -122,7 +122,15 @@
 	 		 </form>
 	 	</div>
 	 	<div class="stats">
-	 		<h3>Stats</h3>
+	 		<h3>Search</h3>
+			<div class="Productos">
+      			<div class="Buscador">
+        			<input type="text" id="search" placeholder="Search product"> <br>
+      			</div>
+    			<div id="result">
+    			</div>
+  			</div>
+  			<script type="text/javascript" src="js/index.js"></script>
 	 	</div>
  	</div>
  	<div class="shoes">
